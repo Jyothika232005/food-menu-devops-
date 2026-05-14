@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savor - Online Food Menu</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+
+    <header id="header">
+        <div class="logo">
+            <i class="fas fa-utensils"></i> Savor
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Delicious Food, <br> Delivered To You</h1>
+            <p>Experience the taste of perfection with our hand-crafted dishes made from the freshest ingredients.</p>
+            <a href="#menu" class="btn">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Food Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="section-title">
+            <h2>Our Menu</h2>
+            <p>Explore our wide variety of delicious options</p>
+        </div>
+
+        <!-- Pizza Category -->
+        <h3 class="category-title">Pizza</h3>
+        <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Margherita Pizza">
+                </div>
+                <div class="card-content">
+                    <h4>Margherita Pizza</h4>
+                    <p>Classic delight with 100% real mozzarella cheese, fresh tomatoes, and basil.</p>
+                    <div class="card-footer">
+                        <span class="price">$12.99</span>
+                        <button class="order-btn" onclick="orderItem('Margherita Pizza')">Order</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pepperoni Pizza">
+                </div>
+                <div class="card-content">
+                    <h4>Pepperoni Pizza</h4>
+                    <p>Loaded with double pepperoni and extra cheese on a crispy crust.</p>
+                    <div class="card-footer">
+                        <span class="price">$14.99</span>
+                        <button class="order-btn" onclick="orderItem('Pepperoni Pizza')">Order</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Veggie Supreme">
+                </div>
+                <div class="card-content">
+                    <h4>Veggie Supreme</h4>
+                    <p>Onions, green capsicum, mushrooms, tomato, and black olives.</p>
+                    <div class="card-footer">
+                        <span class="price">$13.99</span>
+                        <button class="order-btn" onclick="orderItem('Veggie Supreme')">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Burgers Category -->
+        <h3 class="category-title">Burgers</h3>
+        <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Classic Cheeseburger">
+                </div>
+                <div class="card-content">
+                    <h4>Classic Cheeseburger</h4>
+                    <p>Juicy beef patty with cheddar cheese, lettuce, tomato, and our special sauce.</p>
+                    <div class="card-footer">
+                        <span class="price">$8.99</span>
+                        <button class="order-btn" onclick="orderItem('Classic Cheeseburger')">Order</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Bacon BBQ Burger">
+                </div>
+                <div class="card-content">
+                    <h4>Bacon BBQ Burger</h4>
+                    <p>Beef patty topped with crispy bacon, onion rings, and smoky BBQ sauce.</p>
+                    <div class="card-footer">
+                        <span class="price">$10.99</span>
+                        <button class="order-btn" onclick="orderItem('Bacon BBQ Burger')">Order</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1610440042657-612c34d95e9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Spicy Chicken Burger">
+                </div>
+                <div class="card-content">
+                    <h4>Spicy Chicken Burger</h4>
+                    <p>Crispy fried chicken breast with spicy mayo and pickles on a brioche bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$9.99</span>
+                        <button class="order-btn" onclick="orderItem('Spicy Chicken Burger')">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drinks Category -->
+        <h3 class="category-title">Drinks</h3>
+        <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Fresh Lemonade">
+                </div>
+                <div class="card-content">
+                    <h4>Fresh Lemonade</h4>
+                    <p>Refreshing freshly squeezed lemonade with a hint of mint.</p>
+                    <div class="card-footer">
+                        <span class="price">$3.99</span>
+                        <button class="order-btn" onclick="orderItem('Fresh Lemonade')">Order</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Iced Caramel Macchiato">
+                </div>
+                <div class="card-content">
+                    <h4>Iced Caramel Macchiato</h4>
+                    <p>Espresso combined with vanilla-flavored syrup, milk, and caramel drizzle.</p>
+                    <div class="card-footer">
+                        <span class="price">$4.99</span>
+                        <button class="order-btn" onclick="orderItem('Iced Caramel Macchiato')">Order</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Strawberry Smoothie">
+                </div>
+                <div class="card-content">
+                    <h4>Strawberry Smoothie</h4>
+                    <p>Blended fresh strawberries, yogurt, and honey for a healthy treat.</p>
+                    <div class="card-footer">
+                        <span class="price">$5.99</span>
+                        <button class="order-btn" onclick="orderItem('Strawberry Smoothie')">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts Category -->
+        <h3 class="category-title">Desserts</h3>
+        <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Chocolate Lava Cake">
+                </div>
+                <div class="card-content">
+                    <h4>Chocolate Lava Cake</h4>
+                    <p>Warm chocolate cake with a gooey, molten chocolate center.</p>
+                    <div class="card-footer">
+                        <span class="price">$6.99</span>
+                        <button class="order-btn" onclick="orderItem('Chocolate Lava Cake')">Order</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c8e9e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="New York Cheesecake">
+                </div>
+                <div class="card-content">
+                    <h4>New York Cheesecake</h4>
+                    <p>Classic, creamy cheesecake on a graham cracker crust.</p>
+                    <div class="card-footer">
+                        <span class="price">$5.99</span>
+                        <button class="order-btn" onclick="orderItem('New York Cheesecake')">Order</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Ice Cream Sundae">
+                </div>
+                <div class="card-content">
+                    <h4>Ice Cream Sundae</h4>
+                    <p>Vanilla ice cream topped with hot fudge, whipped cream, and a cherry.</p>
+                    <div class="card-footer">
+                        <span class="price">$4.99</span>
+                        <button class="order-btn" onclick="orderItem('Ice Cream Sundae')">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to Savor, where culinary passion meets modern dining. Founded in 2023, we set out with a simple goal: to serve high-quality, delicious food in a welcoming atmosphere.</p>
+            <p><strong>Why choose us?</strong> We source our ingredients locally, our chefs are world-class, and our dedication to your satisfaction is unmatched. From our kitchen to your table, we promise an unforgettable dining experience.</p>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Restaurant Interior">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you</p>
+        </div>
+        <div class="contact-info">
+            <div class="info-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Our Address</h3>
+                <p>123 Foodie Lane, Culinary City, CC 90210</p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>hello@savor.com</p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Call Us</h3>
+                <p>+1 (555) 123-4567</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-utensils"></i> Savor
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Savor Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
