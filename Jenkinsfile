@@ -15,9 +15,15 @@ pipeline {
             }
         }
 
+        stage('Remove Old Container') {
+            steps {
+                bat 'docker rm -f food-menu-app || exit 0'
+            }
+        }
+
         stage('Run Container') {
             steps {
-                bat 'docker run -d -p 8081:80 food-menu-app'
+                bat 'docker run -d -p 8081:80 --name food-menu-app food-menu-app'
             }
         }
     }
